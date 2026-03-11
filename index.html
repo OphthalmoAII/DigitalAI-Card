@@ -22,25 +22,31 @@ border-radius:16px;
 box-shadow:0 12px 40px rgba(0,0,0,0.35);
 }
 
-/* HEADER LAYOUT */
+/* HEADER */
 
 .header{
 display:flex;
 align-items:center;
-gap:15px;
+justify-content:space-between;
 margin-bottom:15px;
 }
 
+.logo{
+width:70px;
+height:auto;
+}
+
 .profile-img{
-width:90px;
-height:90px;
+width:80px;
+height:80px;
 border-radius:50%;
 object-fit:cover;
 border:3px solid #25D366;
 }
 
-.header-text{
-text-align:left;
+.info{
+flex:1;
+text-align:center;
 }
 
 h2{
@@ -57,15 +63,7 @@ font-size:14px;
 .tagline{
 font-size:13px;
 color:#666;
-margin-top:4px;
-}
-
-/* LOGO */
-
-.company-logo{
-width:140px;
-margin:10px auto;
-display:block;
+margin-top:5px;
 }
 
 /* SERVICES */
@@ -129,17 +127,19 @@ opacity:0.9;
 
 <div class="card">
 
-<!-- HEADER SECTION -->
+<!-- HEADER -->
 
 <div class="header">
 
-<img src="bhanu-photo.jpg" class="profile-img">
+<img src="logo.png" class="logo">
 
-<div class="header-text">
+<div class="info">
 
 <h2>Bhanu Prabhakar</h2>
 
-<div class="subtitle">Founder – Fatewise Digital Solutions</div>
+<div class="subtitle">
+Founder – Fatewise Digital Solutions
+</div>
 
 <div class="tagline">
 Helping Ophthalmology Hospitals Grow with Intelligent Digital Marketing
@@ -147,11 +147,9 @@ Helping Ophthalmology Hospitals Grow with Intelligent Digital Marketing
 
 </div>
 
+<img src="bhanu-photo.jpg" class="profile-img">
+
 </div>
-
-<!-- COMPANY LOGO -->
-
-<img src="logo.png" class="company-logo">
 
 <!-- SERVICES -->
 
@@ -168,33 +166,45 @@ Helping Ophthalmology Hospitals Grow with Intelligent Digital Marketing
 
 <p>Tap below and I will share our company details.</p>
 
+<!-- BUTTONS -->
+
 <a href="https://wa.me/919896418496?text=Hi%20Bhanu%2C%20nice%20meeting%20you%20at%20the%20conference.%20Please%20share%20your%20company%20details">
 
-<button class="whatsapp">💬 WhatsApp Me</button>
+<button class="whatsapp">
+💬 WhatsApp Me
+</button>
 
 </a>
 
 <a href="bhanu.vcf">
 
-<button class="contact">📇 Save My Contact</button>
+<button class="contact">
+📇 Save My Contact
+</button>
 
 </a>
 
 <a href="https://eyeforcesolutions.com">
 
-<button class="website">🌐 Visit Website</button>
+<button class="website">
+🌐 Visit Website
+</button>
 
 </a>
 
 <a href="company-profile.pdf">
 
-<button class="profile">📄 Company Profile</button>
+<button class="profile">
+📄 Company Profile
+</button>
 
 </a>
 
 <a href="https://www.linkedin.com/in/bhanu-prabhakar-76b94863/">
 
-<button class="linkedin">🔗 LinkedIn</button>
+<button class="linkedin">
+🔗 LinkedIn
+</button>
 
 </a>
 
