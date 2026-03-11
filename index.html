@@ -13,10 +13,8 @@ box-sizing:border-box;
 body{
 margin:0;
 font-family:Arial, sans-serif;
-min-height:100vh;
 background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
 display:flex;
-align-items:center;
 justify-content:center;
 padding:20px;
 }
@@ -28,20 +26,11 @@ background:white;
 max-width:430px;
 width:100%;
 padding:28px;
-border-radius:22px;
+border-radius:20px;
 box-shadow:0 20px 50px rgba(0,0,0,0.35);
 }
 
-/* HEADER */
-
-.header{
-display:flex;
-align-items:flex-start;
-justify-content:space-between;
-margin-bottom:18px;
-}
-
-/* COMPANY LOGO */
+/* LOGO */
 
 .logo-circle{
 width:90px;
@@ -49,92 +38,99 @@ height:90px;
 border-radius:50%;
 border:4px solid #25D366;
 object-fit:cover;
+display:block;
+margin:auto;
 }
 
-/* PERSONAL PHOTO */
+/* COMPANY NAME */
 
-.profile-img{
-width:120px;
-height:150px;
-object-fit:cover;
-border-radius:12px;
-margin-top:18px;
-}
-
-/* TEXT */
-
-.info{
-flex:1;
-padding:0 12px;
+.company{
 text-align:center;
-}
-
-h1{
-margin:0;
-font-size:26px;
-color:#222;
-line-height:1.1;
-}
-
-/* GOLD BRAND */
-
-.gold{
-color:#d4af37;
+font-size:24px;
 font-weight:bold;
+margin-top:10px;
 }
 
-/* ROYAL BLUE SPECIALTY */
+/* NAME */
 
-.blue{
-color:#1a4fff;
-font-weight:600;
-}
-
-.subtitle{
-font-size:15px;
+.name{
+text-align:center;
+font-size:30px;
 font-weight:bold;
-color:#444;
 margin-top:5px;
 }
 
+.subtitle{
+text-align:center;
+font-size:16px;
+font-weight:600;
+margin-top:3px;
+}
+
+/* TAGLINE */
+
 .tagline{
-font-size:14px;
-color:#666;
-margin-top:6px;
+text-align:center;
+margin-top:8px;
+color:#555;
+font-size:15px;
+line-height:1.4;
 }
 
-/* SERVICES */
+/* ROYAL BLUE */
 
-.section-title{
-margin-top:15px;
-font-weight:bold;
-font-size:18px;
+.blue{
+color:#1f4fff;
+font-weight:600;
 }
+
+/* SERVICES SECTION */
+
+.services-section{
+display:flex;
+gap:15px;
+margin-top:20px;
+align-items:flex-start;
+}
+
+/* SERVICES TEXT */
 
 .services{
+flex:1;
+}
+
+.section-title{
+font-size:20px;
+font-weight:bold;
+margin-bottom:8px;
+}
+
+.services-list{
 font-size:15px;
 line-height:1.7;
 color:#555;
+}
+
+/* PHOTO */
+
+.profile-img{
+width:130px;
+height:170px;
+object-fit:cover;
+border-radius:12px;
 }
 
 /* BUTTONS */
 
 button{
 width:100%;
-padding:15px;
-margin-top:10px;
+padding:14px;
+margin-top:12px;
 border:none;
 border-radius:10px;
 font-size:17px;
 cursor:pointer;
-transition:0.2s;
 }
-
-button:hover{
-transform:scale(1.02);
-}
-
-/* COLORS */
 
 .whatsapp{
 background:#25D366;
@@ -142,7 +138,7 @@ color:white;
 }
 
 .contact{
-background:#1976d2;
+background:#2b6fc0;
 color:white;
 }
 
@@ -168,35 +164,37 @@ color:white;
 
 <div class="card">
 
-<!-- HEADER -->
-
-<div class="header">
+<!-- COMPANY LOGO -->
 
 <img src="logo.png" class="logo-circle">
 
-<div class="info">
+<div class="company">
+Fatewise Digital Solutions
+</div>
 
-<h1>Bhanu<br>Prabhakar</h1>
+<div class="name">
+Bhanu Prabhakar
+</div>
 
 <div class="subtitle">
-Founder – <span class="gold">Fatewise</span> Digital Solutions
+Founder
 </div>
 
 <div class="tagline">
 Helping <span class="blue">Ophthalmology</span> Hospitals Grow with Intelligent Digital Marketing
 </div>
 
-</div>
+<!-- SERVICES + PHOTO -->
 
-<img src="bhanu-photo.jpg" class="profile-img">
-
-</div>
-
-<!-- SERVICES -->
-
-<div class="section-title">Our Services</div>
+<div class="services-section">
 
 <div class="services">
+
+<div class="section-title">
+Our Services
+</div>
+
+<div class="services-list">
 
 ✔ <span class="blue">Ophthalmology</span> Digital Marketing<br>
 ✔ Patient Acquisition Strategy<br>
@@ -205,50 +203,34 @@ Helping <span class="blue">Ophthalmology</span> Hospitals Grow with Intelligent 
 
 </div>
 
+</div>
+
+<img src="bhanu-photo.jpg" class="profile-img">
+
+</div>
+
 <p><b>Nice meeting you at AIOS 2026 Jaipur!</b></p>
 
 <p>Tap below and I will share our company details.</p>
 
-<!-- BUTTONS -->
-
 <a href="https://wa.me/919896418496?text=Hi%20Bhanu%2C%20nice%20meeting%20you%20at%20AIOS%202026.%20Please%20share%20your%20company%20details">
-
-<button class="whatsapp">
-💬 WhatsApp Me
-</button>
-
+<button class="whatsapp">💬 WhatsApp Me</button>
 </a>
 
 <a href="bhanu.vcf">
-
-<button class="contact">
-📇 Save My Contact
-</button>
-
+<button class="contact">📇 Save My Contact</button>
 </a>
 
 <a href="https://eyeforcesolutions.com">
-
-<button class="website">
-🌐 Visit Website
-</button>
-
+<button class="website">🌐 Visit Website</button>
 </a>
 
 <a href="company-profile.pdf">
-
-<button class="profile">
-📄 Company Profile
-</button>
-
+<button class="profile">📄 Company Profile</button>
 </a>
 
 <a href="https://www.linkedin.com/in/bhanu-prabhakar-76b94863/">
-
-<button class="linkedin">
-🔗 LinkedIn
-</button>
-
+<button class="linkedin">🔗 LinkedIn</button>
 </a>
 
 </div>
