@@ -8,54 +8,80 @@
 
 body{
 font-family:Arial, sans-serif;
-background:#f5f5f5;
-text-align:center;
-padding:30px;
+background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+padding:40px;
+margin:0;
 }
 
 .card{
 background:white;
 max-width:420px;
 margin:auto;
-padding:30px;
-border-radius:14px;
-box-shadow:0 8px 25px rgba(0,0,0,0.1);
+padding:25px;
+border-radius:16px;
+box-shadow:0 12px 40px rgba(0,0,0,0.35);
 }
 
-img{
-width:130px;
-height:130px;
+/* HEADER LAYOUT */
+
+.header{
+display:flex;
+align-items:center;
+gap:15px;
+margin-bottom:15px;
+}
+
+.profile-img{
+width:90px;
+height:90px;
 border-radius:50%;
-border:4px solid #25D366;
-margin-bottom:10px;
 object-fit:cover;
+border:3px solid #25D366;
+}
+
+.header-text{
+text-align:left;
 }
 
 h2{
-margin:5px;
+margin:0;
+color:#222;
 }
 
 .subtitle{
 font-weight:bold;
-color:#333;
-}
-
-p{
-color:#555;
+color:#444;
 font-size:14px;
 }
 
+.tagline{
+font-size:13px;
+color:#666;
+margin-top:4px;
+}
+
+/* LOGO */
+
+.company-logo{
+width:140px;
+margin:10px auto;
+display:block;
+}
+
+/* SERVICES */
+
 .section-title{
-margin-top:15px;
 font-weight:bold;
-color:#111;
+margin-top:10px;
 }
 
 .services{
 font-size:14px;
 line-height:1.6;
-margin-bottom:15px;
+color:#555;
 }
+
+/* BUTTONS */
 
 button{
 width:100%;
@@ -92,6 +118,10 @@ background:#0077b5;
 color:white;
 }
 
+button:hover{
+opacity:0.9;
+}
+
 </style>
 </head>
 
@@ -99,54 +129,72 @@ color:white;
 
 <div class="card">
 
-<img src="bhanu.jpg" alt="Bhanu">
+<!-- HEADER SECTION -->
+
+<div class="header">
+
+<img src="bhanu-photo.jpg" class="profile-img">
+
+<div class="header-text">
 
 <h2>Bhanu Prabhakar</h2>
 
-<p class="subtitle">Founder – Fatewise Digital Solutions</p>
+<div class="subtitle">Founder – Fatewise Digital Solutions</div>
 
-<p>Helping Ophthalmology Hospitals Grow with Intelligent Digital Marketing</p>
+<div class="tagline">
+Helping Ophthalmology Hospitals Grow with Intelligent Digital Marketing
+</div>
 
-<p class="section-title">Our Services</p>
+</div>
 
-<p class="services">
+</div>
+
+<!-- COMPANY LOGO -->
+
+<img src="logo.png" class="company-logo">
+
+<!-- SERVICES -->
+
+<div class="section-title">Our Services</div>
+
+<div class="services">
 ✔ Ophthalmology Digital Marketing<br>
 ✔ Patient Acquisition Strategy<br>
 ✔ Hospital Growth Systems<br>
-✔ Digital Brand Building Presence for Eye Hospitals
-</p>
+✔ Digital Brand Building for Eye Hospitals
+</div>
 
-<p><b>Nice meeting you at the AIOS 2026 Jaipur conference!</b></p>
+<p><b>Nice meeting you at AIOS 2026 Jaipur!</b></p>
 
 <p>Tap below and I will share our company details.</p>
 
 <a href="https://wa.me/919896418496?text=Hi%20Bhanu%2C%20nice%20meeting%20you%20at%20the%20conference.%20Please%20share%20your%20company%20details">
 
-<button class="whatsapp">WhatsApp Me</button>
+<button class="whatsapp">💬 WhatsApp Me</button>
 
 </a>
 
 <a href="bhanu.vcf">
 
-<button class="contact">Save My Contact</button>
+<button class="contact">📇 Save My Contact</button>
 
 </a>
 
 <a href="https://eyeforcesolutions.com">
 
-<button class="website">Visit Website</button>
+<button class="website">🌐 Visit Website</button>
 
 </a>
 
 <a href="company-profile.pdf">
 
-<button class="profile">Company Profile</button>
+<button class="profile">📄 Company Profile</button>
 
 </a>
 
 <a href="https://www.linkedin.com/in/bhanu-prabhakar-76b94863/">
 
-<button class="linkedin">LinkedIn</button>
+<button class="linkedin">🔗 LinkedIn</button>
 
 </a>
 
