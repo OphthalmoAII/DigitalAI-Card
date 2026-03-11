@@ -11,10 +11,9 @@ box-sizing:border-box;
 }
 
 body{
-font-family:Arial, sans-serif;
 margin:0;
+font-family:Arial, sans-serif;
 min-height:100vh;
-
 background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
 display:flex;
 align-items:center;
@@ -26,11 +25,11 @@ padding:20px;
 
 .card{
 background:white;
-width:420px;
-max-width:95%;
+max-width:430px;
+width:100%;
 padding:25px;
-border-radius:18px;
-box-shadow:0 20px 50px rgba(0,0,0,0.35);
+border-radius:20px;
+box-shadow:0 20px 50px rgba(0,0,0,0.4);
 }
 
 /* HEADER */
@@ -42,46 +41,48 @@ justify-content:space-between;
 margin-bottom:15px;
 }
 
-/* PROFILE PHOTO */
+/* COMPANY LOGO (CIRCLE) */
+
+.logo-circle{
+width:90px;
+height:90px;
+border-radius:50%;
+border:4px solid #25D366;
+object-fit:cover;
+}
+
+/* PERSONAL PHOTO */
 
 .profile-img{
-width:85px;
-height:85px;
-border-radius:50%;
+width:120px;
+height:140px;
 object-fit:cover;
-border:4px solid #25D366;
+border-radius:12px;
 }
 
-/* LOGO */
-
-.logo{
-width:90px;
-height:auto;
-}
-
-/* TEXT */
+/* CENTER TEXT */
 
 .info{
 flex:1;
-text-align:center;
 padding:0 10px;
+text-align:center;
 }
 
-h2{
+h1{
 margin:0;
-font-size:22px;
+font-size:24px;
 color:#222;
 }
 
 .subtitle{
-font-size:14px;
+font-size:15px;
 font-weight:bold;
 color:#444;
 margin-top:3px;
 }
 
 .tagline{
-font-size:13px;
+font-size:14px;
 color:#666;
 margin-top:5px;
 }
@@ -91,11 +92,12 @@ margin-top:5px;
 .section-title{
 margin-top:15px;
 font-weight:bold;
+font-size:18px;
 }
 
 .services{
-font-size:14px;
-line-height:1.6;
+font-size:15px;
+line-height:1.7;
 color:#555;
 }
 
@@ -107,7 +109,7 @@ padding:14px;
 margin-top:10px;
 border:none;
 border-radius:10px;
-font-size:16px;
+font-size:17px;
 cursor:pointer;
 transition:0.2s;
 }
@@ -116,7 +118,7 @@ button:hover{
 transform:scale(1.02);
 }
 
-/* BUTTON COLORS */
+/* COLORS */
 
 .whatsapp{
 background:#25D366;
@@ -124,7 +126,7 @@ color:white;
 }
 
 .contact{
-background:#007BFF;
+background:#1976d2;
 color:white;
 }
 
@@ -139,7 +141,7 @@ color:white;
 }
 
 .linkedin{
-background:#0077b5;
+background:#0a66c2;
 color:white;
 }
 
@@ -154,11 +156,11 @@ color:white;
 
 <div class="header">
 
-<img src="bhanu-photo.jpg" class="profile-img">
+<img src="logo.png" class="logo-circle">
 
 <div class="info">
 
-<h2>Bhanu Prabhakar</h2>
+<h1>Bhanu<br>Prabhakar</h1>
 
 <div class="subtitle">
 Founder – Fatewise Digital Solutions
@@ -170,7 +172,7 @@ Helping Ophthalmology Hospitals Grow with Intelligent Digital Marketing
 
 </div>
 
-<img src="logo.png" class="logo">
+<img src="bhanu-photo.jpg" class="profile-img">
 
 </div>
 
@@ -179,10 +181,12 @@ Helping Ophthalmology Hospitals Grow with Intelligent Digital Marketing
 <div class="section-title">Our Services</div>
 
 <div class="services">
+
 ✔ Ophthalmology Digital Marketing<br>
 ✔ Patient Acquisition Strategy<br>
 ✔ Hospital Growth Systems<br>
 ✔ Digital Brand Building for Eye Hospitals
+
 </div>
 
 <p><b>Nice meeting you at AIOS 2026 Jaipur!</b></p>
